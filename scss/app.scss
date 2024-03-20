@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lora:wght@500;600&family=Poppins:wght@400;500&display=swap");
+
+@import "../node_modules/remixicon/fonts/remixicon.css";
+@import "../node_modules/animate.css/animate.min.css";
+
+$navbar-nav-link-padding-x:         1.5rem;
+$font-family-sans-serif:  "Poppins", sans-serif;
+$font-size-base: 0.9rem;
+$body-bg: hsl(19, 100%, 96%);
+$body-color:hsl(19, 16%, 35%);
+
+
+$primary:hsl(19, 64%, 54%);
+// $light:  hsl(19, 8%, 55%);
+
+$btn-border-radius: 2rem;
+$btn-padding-x:1.8rem;
+$btn-padding-y:0.7rem;
+// $btn-font-size: 0.9rem;
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4,
+  7: $spacer * 5,
+  8: $spacer * 6,
+  9: $spacer * 7,
+  10: $spacer * 8,
+);
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// custom
+
+nav {
+    background: $body-bg;
+}
+
+.navbar-toggler {
+
+    border: none !important;
+}
+
+.navbar-toggler:focus {
+    outline:none !important;
+    box-shadow: none;
+}
+
+input:focus {
+    outline: none !important;
+    box-shadow: none !important;
+
+}
+
+#home {
+    position: relative;
+    overflow: hidden;
+}
+
+.home-leaf-1{
+    width: 80px;
+    position: absolute;
+    opacity: 0.2;
+    transform: rotate(92deg);
+    z-index: -1;
+    top:8rem;
+    left:-1rem;
+}
+
+.home-leaf-2{
+    width: 100px;
+    position: absolute;
+    opacity: 0.2;
+    transform:  rotate(-18deg);
+    bottom:1rem;
+    right:-2rem;
+}
+
+#about {
+    position: relative;
+    overflow: hidden;
+}
+
+.about-leaf-1 {
+    width: 100px;
+    position: absolute;
+    opacity: 0.2;
+    transform: rotate(-18deg);
+   top:5rem;
+   right: -2rem;
+}
+
+
+
+.title {
+    font-family: "Lora", serif;
+    color:  hsl(19, 16%, 15%);
+}
+
+.sub-title {
+    font-family: "Dancing Script", cursive;;
+}
+
+.navbar-brand-logo {
+    height: 1.5rem;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active {
+    color: white;
+}
+
+.btn-icon i{
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.btn-icon:hover i {
+    transform: translateX(10px);
+}
+
+.home-title img, .about-title img, .recent-title img {
+    height: 50px;
+}
+
+.dish-card {
+    background-color: hsl(19, 100%, 97%);
+
+}
+
+.dish-card img {
+ transform: translateY(-44px);
+ transition: 0.5s;
+}
+
+.dish-card:hover img {
+    transform: translateY(-60px);
+   }
+
+.rotate-leaf {
+    transform: rotate(34deg) translate(18px);
+    height: 50px;
+}
+
+
+.rotate-left-leaf {
+    transform: rotate(-45deg) translate(18px);
+    height: 50px;
+}
+
+.footer-img {
+    height: 25px;
+}
+
+.footer-icons i {
+    font-size: 20px;
+    color: $primary;
+    transition: .5s;
+}
+
+
+.footer__link li:hover {
+    color: $primary;
+}
+
+.up-btn {
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: $primary;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    opacity: 0.5;
+    position: fixed;
+    z-index: 1000;
+    bottom: 1rem;
+    right: 1rem;
+}
